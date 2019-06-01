@@ -22,7 +22,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <jetty.version>9.4.2.v20170220</jetty.version>
+        <jetty.version>[9.4.17.v20190418,)</jetty.version>
         <grpc.version>1.8.0</grpc.version>
         <bytebuddy.version>1.7.6</bytebuddy.version>
         <shade.package>com.furioussoulk</shade.package>

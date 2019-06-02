@@ -50,6 +50,7 @@ public class AgentPackagePathUtil {
                 }
             } else {
                 String classLocation = urlString.substring(urlString.indexOf("file:"), urlString.length() - classResourcePath.length());
+                classLocation = classLocation.replace("file:/", "");
                 return new File(classLocation);
             }
         }

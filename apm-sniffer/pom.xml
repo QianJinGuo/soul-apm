@@ -7,6 +7,7 @@
         <module>apm-core</module>
         <module>apm-agent</module>
         <module>apm-common</module>
+        <module>apm-plugin</module>
     </modules>
 
 

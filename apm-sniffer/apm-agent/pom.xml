@@ -45,25 +45,25 @@
                                     </manifestEntries>
                                 </transformer>
                             </transformers>
-                            <artifactSet>
-                                <excludes>
-                                    <exclude>com.lmax:*</exclude>
-                                    <exclude>org.apache.httpcomponents:*</exclude>
-                                    <exclude>commons-logging:*</exclude>
-                                    <exclude>commons-codec:*</exclude>
-                                    <exclude>*:gson</exclude>
-                                    <exclude>io.grpc:*</exclude>
-                                    <exclude>io.netty:*</exclude>
-                                    <exclude>com.google.*:*</exclude>
-                                    <exclude>com.google.guava:guava</exclude>
-                                </excludes>
-                            </artifactSet>
-                            <relocations>
+                            <!-- <artifactSet>
+                                 <excludes>
+                                     &lt;!&ndash;<exclude>com.lmax:*</exclude>&ndash;&gt;
+                                     <exclude>org.apache.httpcomponents:*</exclude>
+                                     <exclude>commons-logging:*</exclude>
+                                     <exclude>commons-codec:*</exclude>
+                                     <exclude>*:gson</exclude>
+                                     <exclude>io.grpc:*</exclude>
+                                     <exclude>io.netty:*</exclude>
+                                     <exclude>com.google.*:*</exclude>
+                                     <exclude>com.google.guava:guava</exclude>
+                                 </excludes>
+                             </artifactSet>-->
+                            <!--<relocations>
                                 <relocation>
                                     <pattern>${shade.net.bytebuddy.source}</pattern>
                                     <shadedPattern>${shade.net.bytebuddy.target}</shadedPattern>
                                 </relocation>
-                            </relocations>
+                            </relocations>-->
                         </configuration>
                     </execution>
                 </executions>

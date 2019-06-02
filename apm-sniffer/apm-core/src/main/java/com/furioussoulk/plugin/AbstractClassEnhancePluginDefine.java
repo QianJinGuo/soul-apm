@@ -5,6 +5,7 @@ package com.furioussoulk.plugin;
 import com.furioussoulk.logger.LogManager;
 import com.furioussoulk.logger.api.ILogger;
 import com.furioussoulk.plugin.exception.PluginException;
+import com.furioussoulk.plugin.match.ClassMatch;
 import com.furioussoulk.util.StringUtil;
 import net.bytebuddy.dynamic.DynamicType;
 
@@ -40,7 +41,7 @@ public abstract class AbstractClassEnhancePluginDefine {
         /**
          * find witness classes for enhance class
          */
-        String[] witnessClasses = witnessClasses();
+     /*   String[] witnessClasses = witnessClasses();
         if (witnessClasses != null) {
             for (String witnessClass : witnessClasses) {
                 if (!WitnessClassFinder.INSTANCE.exist(witnessClass, classLoader)) {
@@ -49,7 +50,7 @@ public abstract class AbstractClassEnhancePluginDefine {
                     return null;
                 }
             }
-        }
+        }*/
 
         /**
          * find origin class source code for interceptor
@@ -65,12 +66,12 @@ public abstract class AbstractClassEnhancePluginDefine {
     protected abstract DynamicType.Builder<?> enhance(String enhanceOriginClassName,
                                                       DynamicType.Builder<?> newClassBuilder, ClassLoader classLoader, EnhanceContext context) throws PluginException;
 
-    /*    *//**
+    /**
      * Define the {@link ClassMatch} for filtering class.
      *
      * @return {@link ClassMatch}
-     *//*
-    protected abstract ClassMatch enhanceClass();*/
+     */
+    protected abstract ClassMatch enhanceClass();
 
     /**
      * Witness classname list. Why need witness classname? Let's see like this: A library existed two released versions

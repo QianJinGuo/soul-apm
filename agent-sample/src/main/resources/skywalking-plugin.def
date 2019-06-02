@@ -1,0 +1,4 @@
+spring-mvc-annotation-4.x=com.furioussoulk.plugin.instrumentation.ControllerInstrumentation
+spring-mvc-annotation-4.x=com.furioussoulk.plugin.instrumentation.RestControllerInstrumentation
+spring-mvc-annotation-4.x=com.furioussoulk.plugin.instrumentation.HandlerMethodInstrumentation
+spring-mvc-annotation-4.x=com.furioussoulk.plugin.instrumentation.InvocableHandlerInstrumentation

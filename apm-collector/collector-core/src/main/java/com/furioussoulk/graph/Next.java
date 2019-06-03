@@ -1,6 +1,5 @@
 package com.furioussoulk.graph;
 
-import com.furioussoulk.exception.CollectorException;
 import com.furioussoulk.framework.Executor;
 
 import java.util.LinkedList;
@@ -29,7 +28,7 @@ public class Next <INPUT> implements Executor<INPUT> {
      * @param input
      */
     @Override
-    public void execute(INPUT input) throws CollectorException {
+    public void execute(INPUT input) {
         ways.forEach(way -> way.in(input));
     }
 }

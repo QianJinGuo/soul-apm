@@ -12,6 +12,7 @@
     <modules>
         <module>apm-sniffer</module>
         <module>agent-sample</module>
+        <module>apm-collector</module>
     </modules>
 
     <properties>

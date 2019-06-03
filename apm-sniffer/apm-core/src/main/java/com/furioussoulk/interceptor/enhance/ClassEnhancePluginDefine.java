@@ -36,7 +36,6 @@ import net.bytebuddy.implementation.bind.annotation.Morph;
 
 import static net.bytebuddy.jar.asm.Opcodes.ACC_PRIVATE;
 import static net.bytebuddy.matcher.ElementMatchers.isStatic;
-import static net.bytebuddy.matcher.ElementMatchers.not;
 
 /**
  * This class controls all enhance operations, including enhance constructors, instance methods and static methods. All
@@ -123,18 +122,19 @@ public abstract class ClassEnhancePluginDefine extends AbstractClassEnhancePlugi
          */
         if (existedConstructorInterceptPoint) {
             for (ConstructorInterceptPoint constructorInterceptPoint : constructorInterceptPoints) {
-                newClassBuilder = newClassBuilder.constructor(constructorInterceptPoint.getConstructorMatcher()).intercept(SuperMethodCall.INSTANCE
-                        .andThen(MethodDelegation.withDefaultConfiguration()
-                                .to(new ConstructorInter(constructorInterceptPoint.getConstructorInterceptor(), classLoader))
-                        )
-                );
+                newClassBuilder = newClassBuilder.constructor(constructorInterceptPoint.getConstructorMatcher())
+                        .intercept(SuperMethodCall.INSTANCE
+                                .andThen(MethodDelegation.withDefaultConfiguration()
+                                        .to(new ConstructorInter(constructorInterceptPoint.getConstructorInterceptor(), classLoader))
+                                )
+                        );
             }
         }
 
         /**
          * 3. enhance instance methods
          */
-        if (existedMethodsInterceptPoints) {
+       /* if (existedMethodsInterceptPoints) {
             for (InstanceMethodsInterceptPoint instanceMethodsInterceptPoint : instanceMethodsInterceptPoints) {
                 String interceptor = instanceMethodsInterceptPoint.getMethodsInterceptor();
                 if (StringUtil.isEmpty(interceptor)) {
@@ -161,7 +161,7 @@ public abstract class ClassEnhancePluginDefine extends AbstractClassEnhancePlugi
                 }
             }
         }
-
+*/
         return newClassBuilder;
     }
 

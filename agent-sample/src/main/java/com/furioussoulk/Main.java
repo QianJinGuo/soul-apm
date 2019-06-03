@@ -1,9 +1,7 @@
 package com.furioussoulk;
 
 import com.furioussoulk.mvc.TestController;
-import org.springframework.stereotype.Controller;
 
-@Controller
 public class Main {
     static TestController testController = new TestController();
 

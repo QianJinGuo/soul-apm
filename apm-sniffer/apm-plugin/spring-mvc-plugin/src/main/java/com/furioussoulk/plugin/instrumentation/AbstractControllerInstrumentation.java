@@ -56,7 +56,7 @@ public abstract class AbstractControllerInstrumentation extends AbstractSpring4I
 
                     @Override
                     public String getConstructorInterceptor() {
-                        return "org.skywalking.apm.plugin.spring.mvc.v4.ControllerConstructorInterceptor";
+                        return "com.furioussoulk.plugin.interceptor.ControllerConstructorInterceptor";
                     }
                 }
         };
@@ -65,7 +65,7 @@ public abstract class AbstractControllerInstrumentation extends AbstractSpring4I
     @Override
     protected InstanceMethodsInterceptPoint[] getInstanceMethodsInterceptPoints() {
         return new InstanceMethodsInterceptPoint[]{
-                new InstanceMethodsInterceptPoint() {
+                /*new InstanceMethodsInterceptPoint() {
                     @Override
                     public ElementMatcher<MethodDescription> getMethodsMatcher() {
                         return isAnnotatedWith(named("org.springframework.web.bind.annotation.RequestMapping"));
@@ -80,7 +80,7 @@ public abstract class AbstractControllerInstrumentation extends AbstractSpring4I
                     public boolean isOverrideArgs() {
                         return false;
                     }
-                },
+                },*/
                 new InstanceMethodsInterceptPoint() {
                     @Override
                     public ElementMatcher<MethodDescription> getMethodsMatcher() {

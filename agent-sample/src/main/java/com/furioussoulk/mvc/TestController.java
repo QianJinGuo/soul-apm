@@ -6,10 +6,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Map;
 
-@RestController
+@RequestMapping("test_controller")
 @Controller
 public class TestController {
 
+    public TestController() {
+        System.out.println("Construct TestController");
+    }
 
     @RequestMapping("test")
     public Map get(String id) {

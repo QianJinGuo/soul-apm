@@ -34,7 +34,7 @@ public class Agent {
 
         ServiceManager.INSTANCE.boot();
 
-        new AgentBuilder.Default().type(ElementMatchers.nameStartsWith("com.furioussoulk.")).transform(new AgentBuilder.Transformer() {
+        new AgentBuilder.Default().type(pluginFinder.buildMatch()).transform(new AgentBuilder.Transformer() {
 
             @Override
             public DynamicType.Builder<?> transform(DynamicType.Builder<?> builder,

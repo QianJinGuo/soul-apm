@@ -3,6 +3,9 @@ package com.furioussoulk.graph;
 import com.furioussoulk.exception.CollectorException;
 import com.furioussoulk.framework.Executor;
 
+import java.util.LinkedList;
+import java.util.List;
+
 /**
  * The <code>Next</code> is a delegate object for the following {@link Node}.
  * @author 孙证杰

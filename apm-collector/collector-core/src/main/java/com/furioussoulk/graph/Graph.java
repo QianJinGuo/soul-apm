@@ -33,18 +33,18 @@ public final class Graph<INPUT>{
     }
 
     void checkForNewNode(Node node) {
-        int nodeId = node.getHandler().id();
-        if (nodeIndex.containsKey(nodeId)) {
-            throw new PotentialCyclicGraphException("handler="
-                    + node.getHandler().getClass().getName()
-                    + " already exists in graph[" + id + "]");
-        }
-        nodeIndex.put(nodeId, node);
+//        int nodeId = node.getHandler().id();
+//        if (nodeIndex.containsKey(nodeId)) {
+//            throw new PotentialCyclicGraphException("handler="
+//                    + node.getHandler().getClass().getName()
+//                    + " already exists in graph[" + id + "]");
+//        }
+//        nodeIndex.put(nodeId, node);
     }
-
-    public GraphNodeFinder toFinder() {
-        return new GraphNodeFinder(this);
-    }
+//
+//    public GraphNodeFinder toFinder() {
+//        return new GraphNodeFinder(this);
+//    }
 
     ConcurrentHashMap<Integer, Node> getNodeIndex() {
         return nodeIndex;

@@ -12,7 +12,7 @@ public class Config {
         public static String APPLICATION_CODE = "";
 
         /**
-         * Negative or zero means off, by default. {@link #SAMPLE_N_PER_3_SECS} means sampling N {@link TraceSegment} in
+         * Negative or zero means off, by default_method. {@link #SAMPLE_N_PER_3_SECS} means sampling N {@link TraceSegment} in
          * 10 seconds tops.
          */
         public static int SAMPLE_N_PER_3_SECS = -1;
@@ -112,7 +112,7 @@ public class Config {
     public static class Plugin {
         public static class MongoDB {
             /**
-             * If true, trace all the parameters, default is false. Only trace the operation, not include parameters.
+             * If true, trace all the parameters, default_method is false. Only trace the operation, not include parameters.
              */
             public static boolean TRACE_PARAM = false;
         }

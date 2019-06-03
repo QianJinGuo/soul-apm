@@ -13,6 +13,7 @@
         <module>apm-sniffer</module>
         <module>agent-sample</module>
         <module>apm-collector</module>
+        <module>byte-buddy-sample</module>
     </modules>
 
     <properties>

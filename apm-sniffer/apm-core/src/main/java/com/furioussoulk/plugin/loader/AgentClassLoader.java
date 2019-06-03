@@ -26,7 +26,7 @@ import java.util.jar.JarFile;
 public class AgentClassLoader extends ClassLoader {
     private static final ILogger logger = LogManager.getLogger(AgentClassLoader.class);
     /**
-     * The default class loader for the agent.
+     * The default_method class loader for the agent.
      */
     private static AgentClassLoader DEFAULT_LOADER;
 
@@ -47,7 +47,7 @@ public class AgentClassLoader extends ClassLoader {
     }
 
     /**
-     * Init the default
+     * Init the default_method
      *
      * @return
      * @throws PathNotFoundException

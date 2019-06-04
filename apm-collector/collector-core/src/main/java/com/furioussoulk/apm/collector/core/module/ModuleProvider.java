@@ -91,7 +91,7 @@ public abstract class ModuleProvider {
     }
 
     /**
-     * Make sure all required services have been implemented.
+     * Make sure all required META-INF.services have been implemented.
      *
      * @param requiredServices must be implemented by the module.
      * @throws ServiceNotProvidedException when exist unimplemented service.

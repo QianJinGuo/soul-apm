@@ -9,6 +9,9 @@ import java.util.Map;
 import java.util.ServiceLoader;
 
 public enum ServiceManager {
+    /**
+     * instance
+     */
     INSTANCE;
 
     private static final ILogger logger = LogManager.getLogger(ServiceManager.class);

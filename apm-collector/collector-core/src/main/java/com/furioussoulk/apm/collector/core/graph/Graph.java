@@ -3,11 +3,10 @@ package com.furioussoulk.apm.collector.core.graph;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- *
  * @author 孙证杰
  * @date 2019/6/3 13:29
  */
-public final class Graph<INPUT>{
+public final class Graph<INPUT> {
     private int id;
     private WayToNode entryWay;
     private ConcurrentHashMap<Integer, Node> nodeIndex = new ConcurrentHashMap<>();
@@ -41,10 +40,14 @@ public final class Graph<INPUT>{
 //        }
 //        nodeIndex.put(nodeId, node);
     }
-//
+
+    //
 //    public GraphNodeFinder toFinder() {
 //        return new GraphNodeFinder(this);
 //    }
+    public GraphNodeFinder toFinder() {
+        return new GraphNodeFinder(this);
+    }
 
     ConcurrentHashMap<Integer, Node> getNodeIndex() {
         return nodeIndex;

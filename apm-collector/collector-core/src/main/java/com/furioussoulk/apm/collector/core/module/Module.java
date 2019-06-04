@@ -1,8 +1,8 @@
 package com.furioussoulk.apm.collector.core.module;
 
-import com.furioussoulk.apm.collector.core.exception.DuplicateProviderException;
-import com.furioussoulk.apm.collector.core.exception.ProviderNotFoundException;
-import com.furioussoulk.apm.collector.core.exception.ServiceNotProvidedException;
+import com.furioussoulk.apm.core.exception.DuplicateProviderException;
+import com.furioussoulk.apm.core.exception.ProviderNotFoundException;
+import com.furioussoulk.apm.core.exception.ServiceNotProvidedException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

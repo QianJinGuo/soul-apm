@@ -1,7 +1,7 @@
 package com.furioussoulk.apm.collector.core.graph;
 
 import com.furioussoulk.apm.collector.core.framework.Executor;
-import com.furioussoulk.apm.collector.core.exception.CollectorException;
+import com.furioussoulk.apm.core.exception.CollectorException;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -29,7 +29,7 @@ public class Next <INPUT> implements Executor<INPUT> {
      * @param input
      */
     @Override
-    public void execute(INPUT input) throws CollectorException {
+    public void execute(INPUT input)  {
         ways.forEach(way -> way.in(input));
     }
 }

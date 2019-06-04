@@ -1,12 +1,12 @@
 package com.furioussoulk.collector.grpc.manager;
 
-import com.furioussoulk.apm.collector.core.exception.ServiceNotProvidedException;
+import com.furioussoulk.apm.core.exception.ServiceNotProvidedException;
 import com.furioussoulk.apm.collector.core.module.Module;
 import com.furioussoulk.apm.collector.core.module.ModuleProvider;
 import com.furioussoulk.collector.grpc.service.GRPCManagerServiceImpl;
 import com.furioussoulk.collector.grpc.service.GRPCManagerService;
-import com.furioussoulk.apm.collector.core.collector.server.ServerException;
-import com.furioussoulk.apm.collector.core.collector.server.grpc.GRPCServer;
+import com.furioussoulk.apm.collector.server.ServerException;
+import com.furioussoulk.apm.collector.server.grpc.GRPCServer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

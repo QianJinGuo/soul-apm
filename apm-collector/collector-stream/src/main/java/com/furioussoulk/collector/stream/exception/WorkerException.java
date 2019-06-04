@@ -1,7 +1,7 @@
 package com.furioussoulk.collector.stream.exception;
 
 
-import com.furioussoulk.apm.collector.core.exception.CollectorException;
+import com.furioussoulk.apm.core.exception.CollectorException;
 
 /**
  * Defines a general exception a worker can throw when it

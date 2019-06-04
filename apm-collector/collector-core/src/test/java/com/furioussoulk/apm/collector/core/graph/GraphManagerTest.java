@@ -1,9 +1,9 @@
 
 package com.furioussoulk.apm.collector.core.graph;
 
-import com.furioussoulk.exception.CollectorException;
-import com.furioussoulk.apm.collector.core.exception.NodeNotFoundException;
-import com.furioussoulk.apm.collector.core.exception.PotentialCyclicGraphException;
+import com.furioussoulk.apm.core.exception.CollectorException;
+import com.furioussoulk.apm.core.exception.NodeNotFoundException;
+import com.furioussoulk.apm.core.exception.PotentialCyclicGraphException;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;

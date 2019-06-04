@@ -1,6 +1,6 @@
 package com.furioussoulk.apm.collector.core.graph;
 
-import com.furioussoulk.apm.collector.core.exception.NodeNotFoundException;
+import com.furioussoulk.apm.core.exception.NodeNotFoundException;
 
 import java.util.concurrent.ConcurrentHashMap;
 

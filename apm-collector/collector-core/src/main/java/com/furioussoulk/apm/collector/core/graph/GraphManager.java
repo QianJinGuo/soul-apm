@@ -1,6 +1,6 @@
 package com.furioussoulk.apm.collector.core.graph;
 
-import com.furioussoulk.apm.collector.core.exception.GraphNotFoundException;
+import com.furioussoulk.apm.core.exception.GraphNotFoundException;
 
 import java.util.HashMap;
 import java.util.Map;

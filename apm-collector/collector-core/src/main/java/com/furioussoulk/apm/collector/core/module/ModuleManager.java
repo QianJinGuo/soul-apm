@@ -1,10 +1,10 @@
 package com.furioussoulk.apm.collector.core.module;
 
-import com.furioussoulk.apm.collector.core.exception.CycleDependencyException;
-import com.furioussoulk.apm.collector.core.exception.ModuleNotFoundException;
-import com.furioussoulk.apm.collector.core.exception.ModuleNotFoundRuntimeException;
-import com.furioussoulk.apm.collector.core.exception.ProviderNotFoundException;
-import com.furioussoulk.apm.collector.core.exception.ServiceNotProvidedException;
+import com.furioussoulk.apm.core.exception.CycleDependencyException;
+import com.furioussoulk.apm.core.exception.ModuleNotFoundException;
+import com.furioussoulk.apm.core.exception.ModuleNotFoundRuntimeException;
+import com.furioussoulk.apm.core.exception.ProviderNotFoundException;
+import com.furioussoulk.apm.core.exception.ServiceNotProvidedException;
 
 import java.util.*;
 

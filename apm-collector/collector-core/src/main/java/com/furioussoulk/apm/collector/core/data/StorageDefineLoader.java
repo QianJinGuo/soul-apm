@@ -1,7 +1,7 @@
 package com.furioussoulk.apm.collector.core.data;
 
 import com.furioussoulk.apm.collector.core.define.Loader;
-import com.furioussoulk.apm.collector.core.exception.DefineException;
+import com.furioussoulk.apm.core.exception.DefineException;
 import com.furioussoulk.apm.collector.core.define.DefinitionLoader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

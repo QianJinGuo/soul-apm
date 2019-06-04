@@ -1,6 +1,6 @@
 package com.furioussoulk.apm.collector.core.framework;
 
-import com.furioussoulk.apm.collector.core.exception.CollectorException;
+import com.furioussoulk.apm.core.exception.CollectorException;
 
 /**
  * @author 孙证杰

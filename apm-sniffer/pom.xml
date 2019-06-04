@@ -10,7 +10,6 @@
         <module>apm-plugin</module>
     </modules>
 
-
     <parent>
         <groupId>furioussoulk</groupId>
         <artifactId>soul-apm</artifactId>

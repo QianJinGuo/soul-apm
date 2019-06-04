@@ -1,9 +1,9 @@
 package com.furioussoulk.collector.storage;
 
-import com.furioussoulk.client.Client;
-import com.furioussoulk.collector.stream.worker.collector.stream.worker.core.data.StorageDefineLoader;
-import com.furioussoulk.collector.stream.worker.collector.stream.worker.core.data.TableDefine;
-import com.furioussoulk.collector.stream.worker.collector.stream.worker.core.exception.DefineException;
+import com.furioussoulk.apm.collector.core.collector.client.Client;
+import com.furioussoulk.apm.collector.core.data.StorageDefineLoader;
+import com.furioussoulk.apm.collector.core.data.TableDefine;
+import com.furioussoulk.apm.collector.core.exception.DefineException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

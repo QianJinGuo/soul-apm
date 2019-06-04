@@ -1,6 +1,6 @@
 package com.furioussoulk.collector.storage;
 
-import com.furioussoulk.collector.stream.worker.collector.stream.worker.core.module.Module;
+import com.furioussoulk.apm.collector.core.module.Module;
 
 import java.util.ArrayList;
 import java.util.List;

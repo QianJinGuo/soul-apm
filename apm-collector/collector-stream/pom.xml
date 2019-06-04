@@ -9,6 +9,13 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>collector-core</artifactId>
+    <artifactId>collector-stream</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>furioussoulk</groupId>
+            <artifactId>collector-core</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
 </project>

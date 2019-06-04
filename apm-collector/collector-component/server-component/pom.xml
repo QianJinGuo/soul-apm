@@ -11,5 +11,17 @@
 
     <artifactId>server-component</artifactId>
 
-
+    <dependencies>
+    <dependency>
+        <groupId>furioussoulk</groupId>
+        <artifactId>apm-network</artifactId>
+        <version>${project.version}</version>
+        <exclusions>
+            <exclusion>
+                <artifactId>guava</artifactId>
+                <groupId>com.google.guava</groupId>
+            </exclusion>
+        </exclusions>
+    </dependency>
+    </dependencies>
 </project>

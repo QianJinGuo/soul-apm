@@ -55,7 +55,7 @@ public abstract class AbstractControllerInstrumentation extends AbstractSpring4I
 
                     @Override
                     public String getConstructorInterceptor() {
-                        return "ControllerConstructorInterceptor";
+                        return "com.furioussoulk.apm.plugin.interceptor.ControllerConstructorInterceptor";
                     }
                 }
         };

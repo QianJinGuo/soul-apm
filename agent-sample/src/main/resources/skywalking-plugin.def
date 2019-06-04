@@ -1,2 +1,2 @@
-spring-mvc-annotation-4.x=ControllerInstrumentation
+spring-mvc-annotation-4.x=com.furioussoulk.apm.plugin.instrumentation.ControllerInstrumentation
 

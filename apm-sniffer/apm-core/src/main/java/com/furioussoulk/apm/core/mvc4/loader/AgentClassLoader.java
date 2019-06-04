@@ -98,6 +98,7 @@ public class AgentClassLoader extends ClassLoader {
             }
         }
 
+        this.getClass().getClassLoader().loadClass(name);
         throw new ClassNotFoundException("Can't find " + name);
     }
 

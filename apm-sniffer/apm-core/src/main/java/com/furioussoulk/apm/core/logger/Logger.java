@@ -26,6 +26,7 @@ public class Logger implements ILogger {
     }
 
     protected void logger(LogLevel level, String message, Throwable e) {
+        System.out.println(format(level, message, e));
         WriterFactory.getLogWriter().write(format(level, message, e));
     }
 

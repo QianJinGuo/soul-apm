@@ -15,6 +15,8 @@
         <module>collector-queue-define</module>
         <module>collector-core</module>
         <module>collector-stream</module>
+        <module>collector-storage</module>
+        <module>collector-component</module>
     </modules>
 
 

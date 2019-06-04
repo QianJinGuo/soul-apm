@@ -14,6 +14,7 @@
         <module>agent-sample</module>
         <module>apm-collector</module>
         <module>byte-buddy-sample</module>
+        <module>apm-network</module>
     </modules>
 
     <properties>

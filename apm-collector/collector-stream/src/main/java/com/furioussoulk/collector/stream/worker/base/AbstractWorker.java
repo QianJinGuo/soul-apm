@@ -1,18 +1,31 @@
+/*
+ * Copyright 2017, OpenSkywalking Organization All rights reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * Project repository: https://github.com/OpenSkywalking/skywalking
+ */
+
 package com.furioussoulk.collector.stream.worker.base;
 
-import com.furioussoulk.collector.stream.exception.WorkerException;
-import com.furioussoulk.apm.collector.core.graph.Next;
-import com.furioussoulk.apm.collector.core.graph.NodeProcessor;
-import com.furioussoulk.apm.collector.core.module.ModuleManager;
+import org.skywalking.apm.collector.core.graph.Next;
+import org.skywalking.apm.collector.core.graph.NodeProcessor;
+import org.skywalking.apm.collector.core.module.ModuleManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * Demo class
- *
- * @author 孙证杰
- * @email 200765821@qq.com
- * @date 2019/6/4 11:14
+ * @author peng-yongsheng
  */
 public abstract class AbstractWorker<INPUT, OUTPUT> implements NodeProcessor<INPUT, OUTPUT> {
 
@@ -37,4 +50,17 @@ public abstract class AbstractWorker<INPUT, OUTPUT> implements NodeProcessor<INP
      * @throws WorkerException Don't handle the exception, throw it.
      */
     protected abstract void onWork(INPUT message) throws WorkerException;
+
+    @Override public final void process(INPUT input, Next<OUTPUT> next) {
+        this.next = next;
+        try {
+            onWork(input);
+        } catch (WorkerException e) {
+            logger.error(e.getMessage(), e);
+        }
+    }
+
+    protected final void onNext(OUTPUT message) {
+        next.execute(message);
+    }
 }

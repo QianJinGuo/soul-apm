@@ -17,5 +17,20 @@
             <artifactId>collector-agent-grpc-define</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <dependency>
+            <groupId>furioussoulk</groupId>
+            <artifactId>collector-agent-grpc-define</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>furioussoulk</groupId>
+            <artifactId>collector-cluster-define</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>furioussoulk</groupId>
+            <artifactId>server-component</artifactId>
+            <version>${project.version}</version>
+        </dependency>
     </dependencies>
 </project>

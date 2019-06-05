@@ -11,17 +11,31 @@
 
     <artifactId>server-component</artifactId>
 
+    <properties>
+        <jetty.version>9.4.2.v20170220</jetty.version>
+    </properties>
+
     <dependencies>
-    <dependency>
-        <groupId>furioussoulk</groupId>
-        <artifactId>apm-network</artifactId>
-        <version>${project.version}</version>
-        <exclusions>
-            <exclusion>
-                <artifactId>guava</artifactId>
-                <groupId>com.google.guava</groupId>
-            </exclusion>
-        </exclusions>
-    </dependency>
+        <dependency>
+            <groupId>furioussoulk</groupId>
+            <artifactId>apm-network</artifactId>
+            <version>${project.version}</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>guava</artifactId>
+                    <groupId>com.google.guava</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-server</artifactId>
+            <version>${jetty.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-servlet</artifactId>
+            <version>${jetty.version}</version>
+        </dependency>
     </dependencies>
 </project>

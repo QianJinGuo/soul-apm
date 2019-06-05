@@ -19,6 +19,10 @@
         <module>collector-grpc-manager</module>
         <module>collector-agent-grpc</module>
         <module>collector-boot</module>
+        <module>collector-cluster</module>
+        <module>collector-jetty-manager</module>
+        <module>collector-agent-jetty</module>
+        <module>collector-agent-stream</module>
     </modules>
 
 

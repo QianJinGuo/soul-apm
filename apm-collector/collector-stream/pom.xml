@@ -10,6 +10,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>collector-stream</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>collector-agent-stream-define</module>
+        <module>collector-agent-stream-provider</module>
+    </modules>
 
     <dependencies>
         <dependency>

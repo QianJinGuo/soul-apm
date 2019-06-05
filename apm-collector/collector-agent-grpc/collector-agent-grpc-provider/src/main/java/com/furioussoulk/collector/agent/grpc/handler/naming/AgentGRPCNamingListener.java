@@ -18,9 +18,9 @@
 
 package com.furioussoulk.collector.agent.grpc.handler.naming;
 
-import org.skywalking.apm.collector.agent.grpc.AgentGRPCModule;
-import org.skywalking.apm.collector.agent.grpc.AgentModuleGRPCProvider;
-import org.skywalking.apm.collector.cluster.ClusterModuleListener;
+import com.furioussoulk.collector.agent.grpc.AgentGRPCModule;
+import com.furioussoulk.collector.agent.grpc.AgentModuleGRPCProvider;
+import com.furioussoulk.collector.cluster.ClusterModuleListener;
 
 public class AgentGRPCNamingListener extends ClusterModuleListener {
 

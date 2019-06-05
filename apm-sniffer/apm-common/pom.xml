@@ -11,4 +11,9 @@
 
     <artifactId>apm-common</artifactId>
     <packaging>jar</packaging>
+
+    <modules>
+        <module>apm-datacarrier</module>
+        <module>apm-util</module>
+    </modules>
 </project>

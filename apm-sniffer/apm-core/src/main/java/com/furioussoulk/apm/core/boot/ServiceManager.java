@@ -69,4 +69,16 @@ public enum ServiceManager {
     private ServiceLoader<BootService> load() {
         return ServiceLoader.load(BootService.class);
     }
+
+    /**
+     * Find a {@link BootService} implementation, which is already started.
+     *
+     * @param serviceClass class name.
+     * @param <T>          {@link BootService} implementation class.
+     * @return {@link BootService} instance
+     */
+    public <T extends BootService> T findService(Class<T> serviceClass) {
+        return (T) bootedServices.get(serviceClass);
+    }
+
 }

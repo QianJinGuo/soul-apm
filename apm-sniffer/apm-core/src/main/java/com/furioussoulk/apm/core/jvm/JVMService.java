@@ -4,16 +4,28 @@ import com.furioussoulk.apm.core.boot.BootService;
 import com.furioussoulk.apm.core.boot.DefaultNamedThreadFactory;
 import com.furioussoulk.apm.core.boot.ServiceManager;
 import com.furioussoulk.apm.core.conf.Config;
+import com.furioussoulk.apm.core.conf.RemoteDownstreamConfig;
+import com.furioussoulk.apm.core.dictionary.DictionaryUtil;
+import com.furioussoulk.apm.core.jvm.cpu.CPUProvider;
+import com.furioussoulk.apm.core.jvm.gc.GCProvider;
+import com.furioussoulk.apm.core.jvm.memory.MemoryProvider;
+import com.furioussoulk.apm.core.jvm.memorypool.MemoryPoolProvider;
 import com.furioussoulk.apm.core.logger.LogManager;
 import com.furioussoulk.apm.core.logger.api.ILogger;
+import com.furioussoulk.apm.core.remote.GRPCChannelListener;
 import com.furioussoulk.apm.core.remote.GRPCChannelManager;
+import com.furioussoulk.apm.core.remote.GRPCChannelStatus;
 import com.furioussoulk.network.proto.JVMMetric;
+import com.furioussoulk.network.proto.JVMMetrics;
+import com.furioussoulk.network.proto.JVMMetricsServiceGrpc;
 import io.grpc.ManagedChannel;
 import java.util.LinkedList;
 import java.util.concurrent.Executors;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
+
+import static com.furioussoulk.apm.core.remote.GRPCChannelStatus.CONNECTED;
 
 
 /**
@@ -90,7 +102,7 @@ public class JVMService implements BootService, Runnable {
             if (RemoteDownstreamConfig.Agent.APPLICATION_ID != DictionaryUtil.nullValue()
                 && RemoteDownstreamConfig.Agent.APPLICATION_INSTANCE_ID != DictionaryUtil.nullValue()
                 ) {
-                if (status == GRPCChannelStatus.CONNECTED) {
+                if (status == CONNECTED) {
                     try {
                         JVMMetrics.Builder builder = JVMMetrics.newBuilder();
                         LinkedList<JVMMetric> buffer = new LinkedList<JVMMetric>();

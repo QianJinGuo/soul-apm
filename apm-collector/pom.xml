@@ -17,6 +17,7 @@
         <module>collector-storage</module>
         <module>collector-component</module>
         <module>collector-grpc-manager</module>
+        <module>collector-agent-grpc</module>
     </modules>
 
 

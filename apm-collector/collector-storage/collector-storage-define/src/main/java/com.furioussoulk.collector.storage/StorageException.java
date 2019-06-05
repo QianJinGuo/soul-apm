@@ -1,6 +1,6 @@
 package com.furioussoulk.collector.storage;
 
-import com.furioussoulk.apm.core.exception.CollectorException;
+import com.furioussoulk.apm.collector.core.exception.CollectorException;
 
 public abstract class StorageException extends CollectorException {
 

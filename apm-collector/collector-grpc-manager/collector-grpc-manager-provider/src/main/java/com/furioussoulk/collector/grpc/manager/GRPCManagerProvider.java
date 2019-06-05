@@ -1,6 +1,6 @@
 package com.furioussoulk.collector.grpc.manager;
 
-import com.furioussoulk.apm.core.exception.ServiceNotProvidedException;
+import com.furioussoulk.apm.collector.core.exception.ServiceNotProvidedException;
 import com.furioussoulk.apm.collector.core.module.Module;
 import com.furioussoulk.apm.collector.core.module.ModuleProvider;
 import com.furioussoulk.collector.grpc.service.GRPCManagerServiceImpl;

@@ -1,6 +1,6 @@
 package com.furioussoulk.apm.collector.server;
 
-import com.furioussoulk.apm.core.exception.CollectorException;
+import com.furioussoulk.apm.collector.core.exception.CollectorException;
 
 public abstract class ServerException extends CollectorException {
 

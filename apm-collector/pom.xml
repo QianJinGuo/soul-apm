@@ -18,6 +18,7 @@
         <module>collector-component</module>
         <module>collector-grpc-manager</module>
         <module>collector-agent-grpc</module>
+        <module>collector-boot</module>
     </modules>
 
 

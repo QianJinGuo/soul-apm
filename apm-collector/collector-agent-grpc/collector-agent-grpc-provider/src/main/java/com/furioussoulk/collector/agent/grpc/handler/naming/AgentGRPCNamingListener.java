@@ -22,9 +22,6 @@ import org.skywalking.apm.collector.agent.grpc.AgentGRPCModule;
 import org.skywalking.apm.collector.agent.grpc.AgentModuleGRPCProvider;
 import org.skywalking.apm.collector.cluster.ClusterModuleListener;
 
-/**
- * @author peng-yongsheng
- */
 public class AgentGRPCNamingListener extends ClusterModuleListener {
 
     public static final String PATH = "/" + AgentGRPCModule.NAME + "/" + AgentModuleGRPCProvider.NAME;

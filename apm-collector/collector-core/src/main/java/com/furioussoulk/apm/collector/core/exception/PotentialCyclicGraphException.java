@@ -1,5 +1,5 @@
 
-package com.furioussoulk.apm.core.exception;
+package com.furioussoulk.apm.collector.core.exception;
 
 public class PotentialCyclicGraphException extends RuntimeException {
     public PotentialCyclicGraphException(String message) {

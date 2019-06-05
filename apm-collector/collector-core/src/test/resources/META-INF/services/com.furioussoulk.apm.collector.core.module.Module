@@ -1,0 +1,4 @@
+
+com.furioussoulk.apm.collector.core.module.TestModule
+com.furioussoulk.apm.collector.core.module.BaseModuleA
+com.furioussoulk.apm.collector.core.module.BaseModuleB

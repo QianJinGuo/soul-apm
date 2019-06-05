@@ -1,0 +1,4 @@
+
+com.furioussoulk.apm.collector.core.module.TestModuleProvider
+com.furioussoulk.apm.collector.core.module.ModuleAProvider
+com.furioussoulk.apm.collector.core.module.ModuleBProvider

@@ -1,7 +1,6 @@
 package com.furioussoulk.apm.collector.core.graph;
 
 import com.furioussoulk.apm.collector.core.framework.Executor;
-import com.furioussoulk.apm.core.exception.CollectorException;
 
 import java.util.LinkedList;
 import java.util.List;

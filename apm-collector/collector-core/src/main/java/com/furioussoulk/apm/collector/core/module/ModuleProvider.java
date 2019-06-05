@@ -1,6 +1,6 @@
 package com.furioussoulk.apm.collector.core.module;
 
-import com.furioussoulk.apm.core.exception.ServiceNotProvidedException;
+import com.furioussoulk.apm.collector.core.exception.ServiceNotProvidedException;
 
 import java.util.HashMap;
 import java.util.Map;

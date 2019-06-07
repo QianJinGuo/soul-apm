@@ -13,6 +13,7 @@
 
     <modules>
         <module>server-library</module>
+        <module>server-cluster-plugin</module>
     </modules>
 
     <properties>

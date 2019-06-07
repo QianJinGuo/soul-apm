@@ -34,7 +34,7 @@ public class BufferStreamTestCase {
     private static final Logger logger = LoggerFactory.getLogger(BufferStreamTestCase.class);
 
     public static void main(String[] args) throws IOException, InterruptedException {
-        String directory = "/Users/pengys5/code/sky-walking/buffer-test";
+        String directory = "D://Users/pengys5/code/sky-walking/buffer-test";
         BufferStream.Builder<TraceSegmentObject> builder = new BufferStream.Builder<>(directory);
 //        builder.cleanWhenRestart(true);
         builder.dataFileMaxSize(50);

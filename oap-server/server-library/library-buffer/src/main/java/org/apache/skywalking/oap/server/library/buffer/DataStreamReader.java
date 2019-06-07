@@ -122,6 +122,7 @@ public class DataStreamReader<MESSAGE_TYPE extends GeneratedMessageV3> {
 
         try {
             if (readOffset.getOffset() == readingFile.length() && !readOffset.isCurrentWriteFile()) {
+                inputStream.close();
                 FileUtils.forceDelete(readingFile);
                 openInputStream(readEarliestDataFile());
             }

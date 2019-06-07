@@ -15,6 +15,9 @@
         <module>apm-collector</module>
         <module>byte-buddy-sample</module>
         <module>apm-network</module>
+        <module>apm-commons</module>
+        <module>apm-protocol</module>
+        <module>oap-server</module>
     </modules>
 
     <properties>
@@ -24,6 +27,10 @@
         <powermock.version>1.6.4</powermock.version>
         <docker.plugin.version>0.4.13</docker.plugin.version>
         <checkstyle.header.file>java.header</checkstyle.header.file>
+        <checkstyle.version>6.18</checkstyle.version>
+        <junit.version>4.12</junit.version>
+        <mockito-all.version>1.10.19</mockito-all.version>
+
     </properties>
 
     <dependencyManagement>
@@ -54,7 +61,23 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.12</version>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-all</artifactId>
+            <version>${mockito-all.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.powermock</groupId>
+            <artifactId>powermock-module-junit4</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.powermock</groupId>
+            <artifactId>powermock-api-mockito</artifactId>
             <scope>test</scope>
         </dependency>
     </dependencies>

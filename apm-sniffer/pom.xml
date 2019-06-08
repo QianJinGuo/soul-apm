@@ -4,10 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <modules>
-        <module>apm-core</module>
+        <module>apm-agent-core</module>
         <module>apm-agent</module>
-        <module>apm-common</module>
-        <module>apm-plugin</module>
     </modules>
 
     <parent>
